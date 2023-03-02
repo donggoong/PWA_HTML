@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- html5 DTD -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 전세계 통합 유니코드 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 반응형 설정 -->
+    <title>html</title>
+  </head>
+
+  <body>
+    <!-- syntax : 웹표준, semantic : 의미, accessbility : 접근성 -->
+    <main>
+      <section>
+        <h1>
+          <abbr>HTML</abbr>
+          <small>Hyper Text Makeup Language</small>
+        </h1>
+        <p>웹문서의 DOM구조를 설계하는 마크업 언어를 의미한다</p>
+      </section>
+      <hr />
+      <section>
+        <h2>html문서의 특징</h2>
+        <ul>
+          <li>요소(element), 태그(tag), 속성(attribute)이 존재한다.</li>
+          <li>Node(parent, children, decendent, siblings)가 존재한다.</li>
+          <li>Node는 정해진 구조를 준수해야 한다</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>시멘틱요소</h2>
+        <article>
+          <h3>구획요소</h3>
+          <ul>
+            <li>main : 웹문서의 주요내용</li>
+            <li>section, article: 제목과 내용을 포함하는 주제를 다루는 영역</li>
+            <li>header : 사이트의 정체성을 출력하는 영역</li>
+            <li>footer : 사이트의 보조적인 정보를 출력하는 영역</li>
+            <li>
+              aside : 사이트의 부수적인 정보를 출력하는 영역<!-- 주로 광고를 다룰 때 사용, 사이드바 영역 -->
+            </li>
+            <li>nav : 메뉴기능을 제공하는 영역</li>
+            <li>div : 레이아웃 영역</li>
+          </ul>
+        </article>
+        <article>
+          <h3>다양한 논리 요소</h3>
+          <ul>
+            <li>em : 중요함 <em>em</em></li>
+            <li>strong, mark : 강조 <strong>strong</strong></li>
+            <li>small : 보조적의미 <small>small</small></li>
+            <li>i : 구분, 다름의 목적 <i>i</i></li>
+            <li>blockquote : 인용</li>
+            <li>cite : 인용처</li>
+            <blockquote>
+              blockquote
+              <cite>cite</cite>
+            </blockquote>
+            <li>time : 시간표시</li>
+            <li>address : 주소, 전화 등</li>
+            <li>span : 의미가 없음 <span>span</span></li>
+            <li>abbr : 약어</li>
+            <li>dfn : 용어</li>
+          </ul>
+        </article>
+        <article>
+          <h3>물리적 요소</h3>
+          <ul>
+            <li>b : 두꺼운글자 <b>b</b></li>
+            <li>u : 밑줄 <u>u</u></li>
+            <li>strike : 취소선 <strike>strike</strike></li>
+            <li>sup : 윗첨자 <sup>sup</sup></li>
+            <li>sub : 아랫첨자 <sub>sub</sub></li>
+          </ul>
+        </article>
+      </section>
+      <hr />
+      <section>
+        <h2>escaping 문자</h2>
+        <p>마크업에서 허락되지 않는 문자를 표기하는 유니코드</p>
+        <ul>
+          <li>&lt; : &amp;lt;</li>
+          <li>&gt; : &amp;gt;</li>
+          <li>&amp; : &amp;amp;</li>
+          <li>&copy; : &amp;copy;</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

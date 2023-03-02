@@ -1,0 +1,46 @@
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td, th{
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.table1 td,
+.table1 th{
+  width: 100px;
+  height: 40px;
+  text-align: center; /* th는 자동적용 */
+  /* font-weight: normal; */
+  /* vertical-align: middle; */
+}
+
+.table1 thead th{
+  background-color: black;
+  color: white;
+}
+
+.table1 tbody th {
+  background-color: #eee;
+}
+.table2 tr > * {
+  text-align: center;
+  height: 40px;
+}
+
+.table2 td:first-child{
+  width: 50px;
+}
+.table2 td:first-child ~ * {
+  width: 100px;
+}
+
+.table2 thead th {
+  background-color: #eee;
+}
+
+.table2 th[scope='rowgroup']{
+  background-color: #ccc;
+}

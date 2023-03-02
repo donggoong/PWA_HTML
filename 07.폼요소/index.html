@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>폼요소</h1>
+    <ul>
+      <li>form요소는 데이터 전송범위를 의미</li>
+      <li>fieldset : 폼요소내에서 데이터의 범위를 구분</li>
+      <li>legend : fieldset의 제목</li>
+      <li>label : 입력요소 입력값의 참조할 내용, for와 id속성을 사용</li>
+      <li>placeholder 속성 : 글자나 숫자를 입력하는 폼요소에 적용가능</li>
+      <li>size 속성 : text, password의 넓이를 설정하는 속성 (크로싱브라우저를 준수하지 않는다.)</li>
+      <li>maxlength 속성 : text, password의 글자길이 제한</li>
+      <li>autocomplete 속성 : 자동완성기능, name속성을 지정해야 함.</li>
+      <li>option요소의 label속성은 텍스트를 대체하는 기능을 함</li>
+      <li>button type : submit, reset, button</li>
+      <li>file요소 : multiple(다수의 파일을 선택 할 수 있는 기능), accept(파일 유형을 선택할 수 있는 기능)</li>
+      <li>email : 유효성 체크 기능 제공, mobile 사용시 키패드 ui 환경을 제공</li>
+      <li>date, time : 날짜와 시간을 입력</li>
+      <li>number, range : 숫자만 입력가능. min, max, step속성이 허락됨</li>
+      <li>textarea : 크기(cols, rows), css의 resize속성을 사용할 수 있음,
+        textarea요소 안쪽의 모든 여백은 글자로 인식됨
+      </li>
+    </ul>
+    <hr>
+    <h2>시험</h2>
+    <form>
+      <fieldset>
+        <legend>회원가입</legend>
+        <p>
+          <label for="id1">Id</label> :
+          <input type="text" name="name1" autocomplete="on" id="id1" placeholder="영어와 숫자조합만 사용가능" size="15">
+        </p>
+        <p>
+          <label for="id2">비밀번호</label> :
+          <input type="password" name="name2" autocomplete="off" id="id2" placeholder="5글자이내" maxlength="5">
+        </p>
+        <p>
+          <label>성별</label> :
+          <label for="id3-1">
+            <input type="radio" name="a" id="id3-1" title="남자일경우" checked>남
+          </label>
+          <label for="id3-2">
+            <input type="radio" name="a" id="id3-2" title="여자일경우">여
+          </label>
+        </p>
+        <p>
+          <label>취미</label> :
+          <label for="id4-1">
+            <input type="checkbox" id="id4-1" title="영화가 취미인 경우 선택" checked>영화
+          </label>
+          <label for="id4-2">
+            <input type="checkbox" id="id4-2" title="만화가 취미인 경우 선택">만화
+          </label>
+        </p>
+        <p>
+          <label for="id5">가입경로</label> :
+          <select name="" id="id5" multiple>
+            <option value="" label="인터넷"></option>
+            <option value="">지인소개</option>
+            <option value="" selected>기타</option>
+          </select>
+        </p>
+        <p>
+          <label for="id6">파일</label> :
+          <input type="file" id="id6" multiple accept="image/*,pdf">
+        </p>
+        <p>
+          <label for="id7">이메일</label> :
+          <input type="email" id="id7">
+        </p>
+        <p>
+          <label for="id8">연령</label> :
+          <input type="number" id="id8" min="0" max="100" step="10">
+        </p>
+        <p>
+          <label for="id9">전화번호</label> :
+          <input type="tel" id="id9">
+        </p>
+        <p>
+          <label for="id10">생년월일</label> :
+          <input type="date" id="id10">
+        </p>
+        <p>
+          <label for="id11">신장</label> :
+          <input type="range" id="id11" min="100" max="300" step="10">
+        </p>
+        <p>
+          <label for="id12">예약시간</label> :
+          <input type="time" id="id12" >
+        </p>
+        <p>
+          <label for="id13">상세내용</label>
+          <textarea id="id13" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="전송">
+          <input type="reset" value="리셋">
+          <input type="button" value="모양만버튼">
+          <br>
+          <button type="submit">전송하기</button>
+          <button type="reset">다시작성하기</button>
+          <button type="button">가입시확인사항</button>
+        </p>
+      </fieldset>
+    </form>
+  </main>
+
+</body>
+
+</html>

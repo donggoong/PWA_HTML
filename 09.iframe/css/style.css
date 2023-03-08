@@ -1,0 +1,27 @@
+.map {
+  display: block;
+  margin: 50px auto;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.container {
+  position: relative;
+  margin: 50px auto;
+  width: 50%;
+  border: 1px solid black;
+}
+.container::before{
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* padding, margin의 퍼센트는 부모의 넓이 기준 */
+}
+.youtube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+}
